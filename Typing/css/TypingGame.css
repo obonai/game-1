@@ -1,0 +1,300 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*全称セレクタ*/
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+}
+
+/*ゲーム画面全体*/
+#game_wrap {
+	margin: 50px auto 0px auto;
+	width: 700px;
+	height: 400px;
+}
+
+/*難易度ボタン：易しい*/
+#btn_Easy {
+	font-size: 100%;
+	color: #ffffff;
+	padding: 5px 15px;
+	background: -webkit-gradient(
+	linear, left top, left bottom, 
+	from(#F99),
+	to(#F36 ));
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #F36;
+	text-shadow:
+	1px -1px 0px rgba(189,93,10,0.3),
+	0px 1px 0px rgba(255,255,255,0.4);	
+}
+
+#btn_Difficult {
+	font-size: 100%;
+	color: #ffffff;
+	padding: 5px 15px;
+	background: -webkit-gradient(
+	linear, left top, left bottom, 
+	from(#C9F),
+	to(#93C ));
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #939;
+	text-shadow:
+	1px -1px 0px rgba(189,93,10,0.3),
+	0px 1px 0px rgba(255,255,255,0.4);	
+}
+
+/*吹き出し*/
+.speech_buble {
+	float: right;
+	width: 400px;
+	height: 200px;
+	border-style: none;
+	background: url(../img/speech_bubble.png) no-repeat;
+	position: relative;
+	margin: 0px -60px -70px 0px;
+}
+
+#div_time {
+	position: absolute;
+	margin: 40px 0px 0px 20px;
+	width: 300px;
+	height: 50px;
+	font-size:36px;
+}
+
+/*制限時間表示*/
+#time {
+	width: 100px;
+	height: 40px;
+	color: #F00;
+	font-weight:bold;
+	text-align: center;
+}
+
+#time_plus{
+	color:#00C;
+	font-size:18px;
+}
+
+/*コンボ数のdiv*/
+#div_combo {
+	position: absolute;
+	margin: 100px 0px 0px 200px;	
+	font-size:36px;
+}
+
+#combocount {
+	width: 100px;
+	height: 40px;
+	color:#00C;
+	font-weight: bold;
+}
+
+/*問題数の表示*/
+#question {
+	clear: both;
+	float: left;
+	margin: 0px 0px 0px 0px;
+	width: 130px;
+	height: 40px;
+	background-color:#69C;
+	color: #fff;
+	text-align: center;
+	border-radius: 10px 10px 0px 0px;
+	line-height: 40px;
+}
+
+/*【第】部分のdiv*/
+#dai {
+	float: left;
+	width: 20px;
+	height: 40px;
+	margin: 0px 10px 0px 10px;
+}
+
+/*問題番号の表示*/
+#q_num {
+	float:left;
+	width: 50px;
+	height: 40px;
+	font-size: 18px;
+}
+
+/*【問】部分のdiv*/
+#mon {
+	float: left;
+	width: 20px;
+	height: 40px;
+	margin-left: 10px;
+}
+
+
+/*単語を表示*/
+#word_box {
+	float: left;
+	margin: 0px 0px 0px 0px;
+	width: 700px;
+	height: 200px;
+	border:#69C solid 2px;
+	color: #000;
+	text-align: center;
+	font-size: 50px;
+	line-height: 180px;
+}
+
+/*単語の日本語表記のdiv*/
+#jp_word {
+	width: 500px;
+	height: 50px;
+	margin: -30px auto 0px auto;
+	font-size: 30px;
+	text-align: center;
+	color:#666;
+}
+
+/*現在入力中の文字表記のdiv*/
+#input_word{
+	width:700px;
+	height:10px;
+	font-size:25px;
+	color:#F00;
+	margin-top:-135px;
+
+}
+
+
+/*スタートボタン（左）を左揃え*/
+#button_left {
+	clear: both;
+	float: left;
+	margin: 20px 0px 0px 150px;
+	background-color: #fff;
+	text-decoration: none;
+}
+
+/*スタートボタンのスタイル*/
+#btn_start {
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#ffce2d),
+		to(#f3981d ));
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #edb500;
+	text-shadow:
+		1px -1px 0px rgba(189,93,10,0.3),
+		0px 1px 0px rgba(255,255,255,0.4);	
+}
+
+
+/*リセットボタン（右）を右揃え*/
+#button_right {
+	float: right;
+	margin: 20px 150px 50px 0px;
+}
+
+/*リセットボタンのスタイル*/
+#btn_reset {
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#00e860),
+		to(#00bf49 ));
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #00c160;
+	text-shadow:
+		1px -1px 0px rgba(189,93,10,0.3),
+		0px 1px 0px rgba(255,255,255,0.4);	
+}
+
+
+a :hover{
+	/*ホバー時に少し透過させる*/
+	opacity:0.8;
+}
+
+
+/*入力結果*/
+#result {
+	clear: both;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	margin: -450px 50px 0px auto;
+	background-color:#000;
+	color: #FFF;
+	opacity: 0.8;
+	display: none;
+}
+
+.box_result {
+	margin: 200px auto 0px auto;
+	width: 300px;
+	height: 200px;
+}
+
+#btn_result {
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 15px;
+	background: -webkit-gradient(
+	linear, left top, left bottom, 
+	from(#69C),
+	to(#36C ));
+	border-radius: 5px;
+	border: 1px solid #009;
+	text-shadow:
+	1px -1px 0px rgba(189,93,10,0.3),
+	0px 1px 0px rgba(255,255,255,0.4);	
+}
+
+#result li {
+	padding: 20px 20px 20px 20px;
+	font-size: 30px;
+}
+
+#div_space {
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin: -60px 0px 0px 0px;
+	background:url(../img/sps.png) no-repeat;
+	display:none;
+}
+
+
+/*難易度*/
+#div_lv{
+	width:100px;
+	height:30px;
+	font-size:12px;
+	color:#F00;
+	position: absolute;
+}
+
+/*マニュアルに戻る*/
+.back_manual {
+	width: 200px;
+	height: 100%;
+	clear: both;
+	margin: 10px auto;
+	color: #333;
+	text-align: center;
+}
+
+
+
